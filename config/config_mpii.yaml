@@ -1,0 +1,29 @@
+---
+train:
+  params:
+    batch_size: 64
+    epoch: 20
+    lr: 0.00001
+    decay: 0.1
+    decay_step: 5000
+    loss: L1Loss
+  save:
+    #"save_path: "/home/cyh/GazeBenchmark/exp/Implementation/Full-Face""""
+    save_path: "/home/gaoz/GazeBenchmark/Test/GazeZone_K_means"
+    model_name: PureGaze
+    step: 10
+  data:
+    image: "/home/gaoz/datasets/MPIIFaceGaze/Image"
+    label: "/home/gaoz/datasets/MPIIFaceGaze/Label"
+  pretrains: "None"
+test:
+   load:
+      begin_step: 1
+      end_step: 10
+      steps: 1
+      load_path: "/home/xyz/gz/GazeBenchmark/GazeZone/TEST/ETH_0.1_0.01_5"
+      model_name: PureGaze
+   data:
+      image: "/home/xyz/gz/datasets/MPIIFaceGaze/Image"
+      label: "/home/xyz/gz/datasets/MPIIFaceGaze/Label"
+reader: reader_mpii
