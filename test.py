@@ -70,7 +70,7 @@ if __name__ == "__main__":
   for saveiter in range(begin, end+step, step):
     print("Model building")
     net = model.model()
-    statedict = torch.load(os.path.join(savepath, f"Iter_{saveiter}_{modelname}.pt"), map_location="cuda:0")
+    statedict = torch.load(os.path.join(savepath, f"Iter_{saveiter}_{modelname}.pt"), map_location="cuda:0")  # change the "os.path.join(savepath, f"Iter_{saveiter}_{modelname}.pt")" into the pre-trained model path.
 
     net.to(device)
     net.load_state_dict(statedict)
