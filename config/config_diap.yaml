@@ -9,7 +9,7 @@ train:
     loss: L1Loss
   save:
     save_path: "/home/gaoz/GazeBenchmark/Test/GazeZone_K_means"
-    model_name: PureGaze
+    model_name: Gaze360
     step: 20
   data:
     image: "/home/gaoz/datasets/EyeDiap/Image"
@@ -21,7 +21,7 @@ test:
       end_step: 6
       steps: 1
       load_path: "/home/xyz/gz/GazeBenchmark/GazeZone/TEST/ETH_0.1_0.01_5"
-      model_name: PureGaze
+      model_name: Gaze360
    data:
       image: "/home/xyz/gz/datasets/EyeDiap/Image"
       label: "/home/xyz/gz/datasets/EyeDiap/ClusterLabel"
