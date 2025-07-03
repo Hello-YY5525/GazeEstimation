@@ -3,7 +3,7 @@ The official implementation of the ICASSP 2025 paper (Gaze-GZ).
 The pre-trained weights can be found in: https://drive.google.com/drive/folders/1SLJCzXIcBctxuMu7wWKCE6arcm95Xw9J?usp=drive_link
 
 # Citation
-```python
+```text
 @inproceedings{gao2025gaze,
   title={Gaze-GZ: Generalized Gaze Estimation with Multi-scale Gaze Zone Prediction},
   author={Gao, Zheng and Kumar, Puneet and Zou, Hao and Li, Xiaobai},
