@@ -9,7 +9,7 @@ train:
     loss: L1Loss
   save:
     save_path: "/home/gaoz/GazeBenchmark/Test/GazeZone_K_means"
-    model_name: PureGaze
+    model_name: Gaze360
     step: 10
   data:
     image: "/home/gaoz/datasets/MPIIFaceGaze/Image"
