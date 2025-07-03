@@ -21,7 +21,7 @@ test:
       end_step: 20
       steps: 4
       load_path: "/home/xyz/gz/GazeBenchmark/GazeZone/TEST/Gaze360"
-      model_name: PureGaze
+      model_name: Gaze360
    data:
       image: "/home/gaoz/datasets/Gaze360/Image"
       label: "/home/gaoz/datasets/Gaze360/Label/train.label"
