@@ -21,11 +21,11 @@ valid:
       begin_step: 4
       end_step: 20
       steps: 4
-      load_path: "/home/cyh/GazeBenchmark/exp/Implementation/Gaze360-eth"
+      load_path: "/home/xyz/gz/GazeBenchmark/GazeZone/TEST/ETH"
       model_name: Gaze360
    data:
-      image: "/home/cyh/GazeDataset20200519/FaceBased/ETH-Gaze/Image/train"
-      label: "/home/cyh/GazeDataset20200519/FaceBased/ETH-Gaze/Label/test.label"
+      image: "/home/xyz/gz/datasets/ETH-XGaze/Image/test"
+      label: "/home/xyz/gz/datasets/ETH-XGaze/Label/test.label"
 
 test:
    load:
@@ -37,21 +37,7 @@ test:
    data:
       image: "/home/xyz/gz/datasets/ETH-XGaze/Image/test"
       label: "/home/xyz/gz/datasets/ETH-XGaze/Label/test.label"
-cross:
-  save_name: cross-mpii-new
-  load:
-      begin_step: 16
-      end_step: 16
-      steps: 4
-      load_path: "/home/xyz/gz/GazeBenchmark/exp/PureGaze/Test/eth"
-      load_name: False
-      model_name: Gaze360
-  data:
-      image: "/home/cyh/GazeDataset20200519/FaceBased/MPIIFaceGaze/Image"
-      label: "/home/cyh/GazeDataset20200519/FaceBased/MPIIFaceGaze/Label"
 
-# image: "/home/cyh/GazeDataset20200519/FaceBased/EyeDiap/Image"
-# label: "/home/cyh/GazeDataset20200519/FaceBased/EyeDiap/ClusterLabel"
 
 reader: reader_eth
 device: 0
